@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ag_book_roundedmedium";
+  src: url("../fonts/ag_book_rounded_medium-webfont.woff2") format("woff2"),
+    url("../fonts/ag_book_rounded_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Condensed";
+  src: url("../fonts/Roboto-Condensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary: #251d96;
+  --secondary: #f9ae00;
+  --terciario: #e2e2e2;
+  --terciario-hover: #d8d8d8;
+  --poppins: "Poppins", sans-serif;
+  --fontAg: "ag_book_roundedmedium";
+  --fontRoboto: "Roboto-Condensed";
+}
+
+main {
+  padding: 80px 80px;
+  background-color: var(--secondary);
+}
+.btn-partidas {
+  background-color: var(--secondary);
+  width: 100%;
+  padding: 8px 15px;
+  border: none;
+  color: var(--terciario);
+  font-family: "Roboto-Condensed";
+  border-radius: 5px;
+}
+.form-partidas {
+  background-color: var(--primary);
+  padding: 20px;
+  font-family: "Roboto-Condensed";
+  font-size: 18px;
+  color: var(--terciario);
+  border-radius: 15px;
+}
+.form-partidas h4 {
+  color: var(--terciario);
+  text-align: center;
+  font-family: "ag_book_roundedmedium";
+}
+.lista-partidas {
+  display: flex;
+  justify-content: center;
+}
+.container-lista {
+  width: 80%;
+}
+.buscador {
+  height: 35px;
+  color: #ffff;
+  background-color: var(--terciario);
+  display: flex;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.buscador input {
+  border-radius: 5px 0 0 5px;
+  background-color: var(--terciario);
+  padding: 0 15px;
+  width: 100%;
+  font-family: var(--poppins);
+  font-size: 15px;
+  border: none;
+}
+.buscador div {
+  background-color: #251d96;
+  color: #ffff;
+  display: flex;
+  padding: 0 10px;
+  border-radius: 0 5px 5px 0;
+  align-items: center;
+}
+.tarjetas{
+    padding-top: 30px;
+}
+.tarjeta{
+    background-color: #D9D9D9;
+    padding: 20px;
+    margin: 10px;
+    border: 2px solid black;
+}
+.grid-lista{
+    display: grid;
+    grid-column: 50% 50%;
+    row-gap: 5px;
+}
+.tarjeta .name-partida{
+    display: flex;
+}
+

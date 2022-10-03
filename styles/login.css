@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Comic Sans, Helvetica, fantasy;
+}
+:root {
+    --primary: #243589;
+    --secondary: #F6A117;
+}
+@font-face {
+    font-family: 'ag_book_roundedmedium';
+    src: url('../fonts/ag_book_rounded_medium-webfont.woff2') format('woff2'),
+        url('../fonts/ag_book_rounded_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto-Condensed';
+    src: url('../fonts/Roboto-Condensed.woff')format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url(https://prestaclub.com/wp-content/uploads/2022/08/fondo-para-pagina.png);
+  background-size:cover;
+  background-position:bottom;
+  font-family: sans-serif;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title{
+    font-size: 30px;
+    color: var(--secondary);
+    font-family: 'ag_book_roundedmedium';
+}
+.contenido-pagina{
+    min-height: 450px;
+    width: 320px;
+    border-radius: 20px;
+    background-color:#ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transition: all 0.8s;
+}
+.contenido-pagina img{
+    width: 140px;
+    height: 120px;
+}
+.contenido-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--primary);
+}
+.contenido-registro{
+    width: 100%;
+    height: fit-content;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+}
+form{
+    width: 85%;
+    margin: auto;
+}
+
+.input-linea-contenedora{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.name-input{
+    font-family: 'Roboto-Condensed';
+    color: var(--primary);
+    font-size: 22px;
+}
+.msg-error-alert{
+    color: #ffff;
+    margin-top: 5px;
+    border: none;
+    font-weight: 100;
+    padding: 10px 15px;
+    border-radius: 3px;
+    margin-bottom: 10px;
+    background-color: #9e2010;
+}
+.input-linea{
+    width: 100%;
+    height: 30px;
+    background-color: transparent;
+    font-family: 'Roboto-Condensed';
+    border-top: none;
+    border-left: none;
+    font-size: 20px;
+    border-right: none;
+    border-bottom: 2px solid #a1a1a1;
+    outline: none;
+    margin-bottom: 1rem;
+    color: rgb(43, 39, 39);
+}
+
+.button-login{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    background: var(--secondary);
+    color: #ffffff;
+    font-size: 20px;
+    font-family: 'ag_book_roundedmedium';
+    border: none;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+}
+
+.button-second{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    background: transparent;
+    color: var(--secondary);
+    font-size: 20px;
+    font-family: 'ag_book_roundedmedium';
+    border: 2px solid #f2b648;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-login:hover{
+    background-color: var(--primary);
+    box-shadow: 0px 0px 3px #493cbd;
+    border-color: var(--primary);
+}
+
+.button-second:hover{
+    opacity: 1;
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.bad{
+  text-align: center;
+  width: 100%;
+  padding: 12px;
+  background-color: #a22;
+  color: #fff
+}
