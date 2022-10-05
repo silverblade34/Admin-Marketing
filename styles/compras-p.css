@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "ag_book_roundedmedium";
+  src: url("../fonts/ag_book_rounded_medium-webfont.woff2") format("woff2"),
+    url("../fonts/ag_book_rounded_medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto-Condensed";
+  src: url("../fonts/Roboto-Condensed.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --primary: #251d96;
+  --secondary: #f9ae00;
+  --terciario: #e2e2e2;
+  --terciario-hover: #d8d8d8;
+  --gris:#A3A3A3;
+  --background-tarjetas:#D9D9D9;
+  --poppins: "Poppins", sans-serif;
+  --fontAg: "ag_book_roundedmedium";
+  --fontRoboto: "Roboto-Condensed";
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+main{
+  display: flex;
+  justify-content: center;
+  padding: 90px 0;
+  background-color: #f9ae00;
+}
+.container-table{
+  width: 80%;
+  font-family: var(--poppins);
+}
+.nombre-presupuesto{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #ffff;
+}
+.list-btn{
+  color: rgb(53, 53, 53);
+  padding: 15px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.table{
+  color:#ffff ;
+  background-color: var(--primary);
+}
+.table td{
+  color:#ffff ;
+  font-family: var(--poppins);
+  font-size: 14px;
+}
+.table thead{
+  background-color: var(--gris);
+}
+.td-icons i{
+  padding:0 10px;
+}
+.td-icons .edit{
+  color: var(--secondary);
+}
+.td-icons .delete{
+  color: #db3c27;
+}
+

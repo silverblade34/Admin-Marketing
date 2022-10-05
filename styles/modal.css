@@ -1,0 +1,76 @@
+/*--------------------MODAL-------------------- */
+.back-modal{
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background-color: #44444475;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.6s 0.9s;
+    --transform: translateY(-100vh);
+    --transition: transform 0.4s;
+  }
+  .modal--show{
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 0.4s;
+    --transform: translateY(0);
+    --transition: transform 0.4s 0.4s;
+  }
+  
+  .back-modal .form-edit{
+    background-color: var(--background-tarjetas);
+    padding: 20px;
+    min-width: 400px;
+    width:fit-content;
+    border-radius: 10px;
+  }
+  .form-edit h4{
+    text-align: center;
+  
+    font-family: var(--fontAg);
+    color: var(--primary);
+  }
+  .form-edit label{
+    font-family: var(--fontRoboto);
+    font-size: 19px;
+  }
+  .form-edit-cerrar{
+    display: flex;
+    height: 25px;
+    justify-content: end;
+  }
+  .form-edit-cerrar button{
+    background: transparent;
+    border: none;
+  }
+
+  .btn-partidas {
+    background-color: var(--secondary);
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    color: var(--terciario);
+    font-family: "Roboto-Condensed";
+    border-radius: 5px;
+  }
+  .modal__close{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .modal__close:hover{
+    color: black;
+  }
+  @media (max-width: 800px) {
+    .back-modal .form-edit{
+        min-width: 300px;
+       }
+  }

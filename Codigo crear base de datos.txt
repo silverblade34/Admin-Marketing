@@ -1,0 +1,24 @@
+CREATE DATABASE prestacl_landing;
+
+----------------USUARIOS-----------------
+create table usuarios(
+ id INT PRIMARY KEY AUTO_INCREMENT,
+ usuario varchar(20) NOT NULL,
+ contrasena varchar(25) NOT NULL
+)
+
+---------------------Editar tablas----------------
+
+UPDATE partidasp SET nombre="nombre cambiado" WHERE id=29 
+
+--------------------Tabla compras--------------------
+CREATE TABLE comprasp(
+ id INT PRIMARY KEY AUTO_INCREMENT,
+ nombre VARCHAR(30) NOT NULL,
+ descripcion VARCHAR(150) NOT NULL
+)
+
+ALTER TABLE comprasp
+    ADD COLUMN idPartida int(200) NOT NULL,
+    ADD CONSTRAINT `fk_id_partida` FOREIGN KEY (idPartida)
+        REFERENCES partidasp (id);
