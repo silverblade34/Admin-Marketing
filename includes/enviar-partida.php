@@ -15,7 +15,7 @@ if (isset($_POST['enviar-partida'])) {
         header('location:../partidas_p.php');
     } else {
         $_SESSION['msg-enviarp'] = true;
-        header('location:../partidas_p.php');
+        header('location:../partidasp.php');
     }
 }elseif(isset($_POST['cerrar-modal-partida'])){
     
@@ -34,10 +34,12 @@ if (isset($_POST['enviar-partida'])) {
     if (($result = mysqli_query($conn, $consulta)) === false) {
         die(mysqli_error($conn));
         $_SESSION['msg-enviarp'] = false;
+        unset($_SESSION['idM']);
+        header('location:../partidasp.php');  
     } else {
         $_SESSION['msg-enviarp'] = true;
         unset($_SESSION['idM']);
-        header('location:../partidas_p.php');  
+        header('location:../partidasp.php');  
     }
 }elseif(isset($_POST['enviar-compra'])){
     $nombre = $_POST['nombre'];

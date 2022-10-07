@@ -1,5 +1,44 @@
 CREATE DATABASE prestacl_landing;
+----------------------
+create TABLE cientelanding(
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   nombres VARCHAR(50) NOT NULL,
+   dni INT NOT NULL,
+   correo VARCHAR(50) NOT NULL,
+   celular INT NOT NULL,
+   fecha TIMESTAMP NOT NULL
+)
 
+--------------------------
+create TABLE campañaNavidad(
+   id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+   nombres VARCHAR(50) NOT NULL,
+   dni INT NOT NULL,
+   correo VARCHAR(50) NOT NULL,
+   celular VARCHAR(13) NOT NULL,
+   Tlocal VARCHAR(2) NOT NULL,
+   Tinmueble VARCHAR(2) NOT NULL,
+   rutaImagen VARCHAR(150) NOT NULL,
+   fecha DATETIME NOT NULL
+)
+
+-------------------------------
+create table facturaMarketing(
+ id int AUTO_INCREMENT PRIMARY KEY,
+ nombre varchar(50) NOT NULL,
+ descripcion varchar(50) NOT NULL,
+ ruta varchar(150) NOT NULL,
+ fechaE DATETIME NOT NULL,
+ fechaC DATETIME NOT NULL,
+ sustento1 VARCHAR(100),
+ sustento2 VARCHAR(100),
+ sustento3 VARCHAR(100);
+)
+----------------------------------
+ALTER TABLE facturamarketing 
+  ADD COLUMN sustento1 VARCHAR(100),
+  ADD COLUMN sustento2 VARCHAR(100),
+  ADD COLUMN sustento3 VARCHAR(100);
 ----------------USUARIOS-----------------
 create table usuarios(
  id INT PRIMARY KEY AUTO_INCREMENT,

@@ -1,6 +1,6 @@
 <?php
 $servername = "localhost";
-$database = "test";
+$database = "prestaclub";
 $username = "root";
 $password = "";
 // Create connection

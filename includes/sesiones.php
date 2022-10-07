@@ -7,17 +7,17 @@ if(isset($_GET['idPartida'])){
 $_SESSION['compra-p'] = $_GET['idPartida'];
 header('Location:../compras-presupuestales.php');
 
-/*-----------------Inicio SESSION modal edit partida presupuestal-------------- */
+/*--------------------------Inicio SESSION modal edit partida presupuestal--------------------*/
 }elseif(isset($_GET['id'])){
     $id=$_GET['id'];
     $consulta="SELECT * FROM partidasp WHERE id='$id'";
     if (($result = mysqli_query($conn, $consulta)) === false) {
-        die(mysqli_error($conn));
-        
+        die(mysqli_error($conn));     
     } else {
         $_SESSION['idM']=$id;
-        header('location:../partidas_p.php');
+        header('location:../partidasp.php');
     }
+/*-----------------Inicio sesion para modal de crear compras presupuestales-----------------*/
 }elseif(isset($_GET['modalC'])){
     if ($_GET['modalC'] == true) {
         $_SESSION['modalC']=true;
